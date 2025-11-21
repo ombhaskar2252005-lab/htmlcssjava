@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Web Page</title>
+  <style>
+/* Mobile-first styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem; 
+  line-height: 1.5;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* stacked on mobile */
+  gap: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.intro {
+  padding: 2rem 5%;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 5%;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+/* Tablet screens (≥600px) */
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row; /* horizontal menu */
+    justify-content: space-around;
+  }
+
+  .grid {
+    flex-direction: row;
+  }
+
+  .card {
+    flex: 1;
+  }
+}
+
+/* Desktop screens (≥1024px) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.125rem; /* scale up text */
+  }
+
+  header, .intro, .grid, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    gap: 2rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Site</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>This page adapts beautifully to any screen size using mobile-first design.</p>
+    </section>
+
+    <section class="grid">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Responsive Design Demo</p>
+  </footer>
+</body>
+</html>
