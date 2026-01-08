@@ -35,6 +35,20 @@
                 height: 100vh;
             }
         }
+         @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        img{
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
     </style>
 </head>
 <body>
