@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .box{
+            width: 300px;
+            background-color: red;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: widthAnimate;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            /*animation-delay: 1s;*/
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes widthAnimate{
+            from{
+                width: 300px;
+                height: 300px;
+            }
+            to{
+                width: 100vw;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://i.pinimg.com/736x/e3/71/f7/e371f7bfa3345af41adde9cc5c145d1c.jpg" alt="a" width="100px">
+        </div>
+
+    </div>
+    
+</body>
+</html>
