@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 450px;
+        }
+        img:hover {
+            width: 18px;
+        }
+        img{
+            width: 200px;
+            transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+</style>
+</head>
+<body>
+    <div class="container"><img id="myImage" src="https://wallup.net/wp-content/uploads/2014/10/nature/Beautiful_Forest_Green_Lake_Landscape.jpg" width="200px" height="150px">
+    <button id="btn">
+        click me
+    </button>
+    </div>
+</body>
+<script>
+    btn.addEventListener("click", ()=>{
+        myImage.style.width = "418px";
+    })
+</script>
+
+</html>
